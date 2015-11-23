@@ -31,6 +31,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 
 <body id="page-top" class="index">
@@ -56,19 +58,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Cilj</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Lokacije</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Akcija</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#team">Tim</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -93,8 +95,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">statistika</h2>
+                    <h3 class="section-subheading text-muted">Kako napreduje akcija?</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -107,10 +109,7 @@
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
+                    <canvas id="chart-area"></canvas>
                     <h4 class="service-heading">Responsive Design</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
@@ -178,6 +177,8 @@
                         <p class="text-muted">Makedonska</p>
                     </div>
                 </div>
+                </div>
+                <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -220,6 +221,36 @@
                         <p class="text-muted">Website Design</p>
                     </div> <!-- portfolio-caption-->
                 </div> <!-- portfolio-item-->
+                </div>
+                <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div> <!-- portfolio-hover-content-->
+                        </div> <!-- portfolio-hover-->
+                        <img src="img/portfolio/22.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Fon</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div> <!-- portfolio-caption-->
+                </div> <!-- portfolio-item-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Impact Hub</h4>
+                        <p class="text-muted">Makedonska</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -402,7 +433,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
+                    <h2 class="section-heading">Kontaktirajte nas</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -412,21 +443,21 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Vaše ime *" id="name" required data-validation-required-message="Niste uneli Vaše ime.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Vaš e-mail *" id="email" required data-validation-required-message="Niste uneli Vašu e-mail adresu.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Vaš telefon " id="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Vaša poruka *" id="message" required data-validation-required-message="Niste uneli poruku."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -657,6 +688,32 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
+
+    <script>
+
+        var doughnutData = [
+                {
+                    value: 70, //{{percent}}
+                    color:"#337AB7",
+                    label: "Sakupili"
+                },
+                {
+                    value: 100-70, //{{percent}}
+                    color: "#F1F1F1",
+                    label:"Ostalo"
+                }
+
+            ];
+
+            window.onload = function(){
+                var ctx = document.getElementById("chart-area").getContext("2d");
+                window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+            };
+
+
+
+    </script>
 
 </body>
 
